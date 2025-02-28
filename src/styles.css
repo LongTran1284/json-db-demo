@@ -1,1 +1,61 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .input {
+      @apply border px-3 py-1 rounded-lg w-[150px] md:w-[250px]
+  }
+
+  .btn {
+    @apply w-[80px] px-3 py-1 rounded-lg active:opacity-80
+  }
+
+  .submit {
+    @apply bg-blue-500 text-white border-blue-600
+  }
+
+  .cancel {
+    @apply bg-red-500 text-white border-red-600
+  }
+
+  .activeNav {
+    @apply text-white border-b-4 border-b-cyan-500    
+  }
+  
+  .h1 {
+      @apply text-2xl font-bold md:text-3xl
+  }
+
+  .h2 {
+      @apply text-xl font-bold md:text-2xl
+  }
+
+  .h3 {
+      @apply text-lg font-bold md:text-xl
+  }
+
+  .h4 {
+      @apply text-base font-bold md:text-lg
+  }
+
+  .h5 {
+      @apply text-sm md:text-base
+  }
+
+  .h6 {
+      @apply text-xs md:text-sm
+  }
+}
+
+body {
+    background-color: rgb(234, 233, 233);
+}
+
+th {
+    cursor: pointer;
+}
+
+th:active {
+    color: blue
+}
